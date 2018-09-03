@@ -8,6 +8,7 @@ ng build --prod
 ng test
 ng e2e
 ng help
+ng add @angular/elements
 
 1. Init Repo (VSCode)
 
