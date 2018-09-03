@@ -10,10 +10,11 @@ import { ButtonComponent } from './button/button.component';
   entryComponents: [ButtonComponent]
 })
 export class AppModule {
-    constructor(private injector: Injector) {
-      const customButton = createCustomElement(ButtonComponent, { injector });
-      customElements.define('custom-button', customButton);
-    }
+  constructor(private injector: Injector) {
+  }
 
-  ngDoBootstrap() { }
+  ngDoBootstrap() {
+    const customButton = createCustomElement(ButtonComponent, { injector: this.injector });
+    customElements.define('custom-button', customButton);
+  }
 }
