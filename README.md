@@ -1,27 +1,30 @@
-# Ng03
+npm install -g @angular/cli
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.
+ng new ng03 --prefix custom
+ng serve
+ng serve --port=4201
+ng build
+ng build --prod
+ng test
+ng e2e
+ng help
 
-## Development server
+1. Init Repo (VSCode)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2. Commit Repo (VSCode)
 
-## Code scaffolding
+3. Create Repo (GitHub REST API)
+-> curl -u 'kwokhung' https://api.github.com/user/repos -d '{"name":"ng03"}'
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4. Remote Add Origin
+-> git remote add origin https://github.com/kwokhung/ng03
 
-## Build
+5. Push Origin Master
+-> git push -u origin master
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+npm install --save @types/facebook-js-sdk
+npm install --save @capacitor/core @capacitor/cli
+npx cap init
+npx cap init ng03 com.mblinus.test
+npx cap add android
+npx cap open android
