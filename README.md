@@ -12,6 +12,8 @@ ng add @angular/elements
 ng g component button --inline-style --inline-template -v Native
 
 npm install --save-dev http-server
+npm run build && npm run package
+npm run serve
 
 1. Init Repo (VSCode)
 
