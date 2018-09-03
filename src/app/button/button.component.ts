@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'custom-button',
@@ -10,8 +10,7 @@ import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter } fro
       background: #bada55;
       font-size: 20px;
     }
-  `],
-  encapsulation: ViewEncapsulation.Native
+  `]
 })
 export class ButtonComponent implements OnInit {
 
