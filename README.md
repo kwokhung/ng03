@@ -9,6 +9,7 @@ ng test
 ng e2e
 ng help
 ng add @angular/elements
+ng g component button --inline-style --inline-template -v Native
 
 1. Init Repo (VSCode)
 
